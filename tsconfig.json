@@ -1,3 +1,4 @@
+
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -17,8 +18,12 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"],
+      "components/*": ["components/*"],
+      "assets/*": ["assets/*"],
+      "types/*": ["types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
